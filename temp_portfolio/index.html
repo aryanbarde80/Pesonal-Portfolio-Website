@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan - Developer Portflio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="Logoo.png" image/x-icon"/>
+    <style>
+
+        *{
+            margin: 0;/*m0 enter ->> shortcut to write this*/
+            padding: 0;/*p0 enter ->> shortcut to write this*/
+        }
+
+        body{
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* right click ->>>> format document (get all indentation rightly in the code)*/
+
+        /*Google fonts ->> poppins ->> regular400 and bold*/
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li{
+            list-style: none;/*To remove bullets*/
+            margin: 0px 25px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        nav ul li a:hover{
+            color: rgb(153, 153, 226);
+            font-size: 1.01rem;
+        }
+
+        /* Way to style hr*/
+
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left{
+            font-size: 1.5rem;
+        }
+
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0px;
+            align-items: center;
+        }
+        
+        .firstSection > div{ /* (>) because of this only first section ke div ko 30% width milega*/
+            width: 30%;
+            /*background-color: rebeccapurple;*/
+        }
+
+        .leftSection{
+            /* background-color: red;
+            width: 34px; */
+            font-size: 3rem;
+            /* margin: 70px 0px; */
+        }
+
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+
+        .leftSection .btn{
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img{
+            /* background-color: red; */
+            /*there was a horizontal scroll bar which we removed to make it look good...*/
+            width: 80%;
+            /*margin: 50px 0px;*/
+        }
+
+        .purple{
+            color: rgb(170, 107, 228);
+        }
+
+        #element{/*coloring to imported library*/
+            color: rgb(170, 107, 228);
+        }
+
+        .text-gray{
+            color: gray;
+        }
+
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        /*Utility class, Side Specific class and global class must be separate stylesheets to get organized*/
+
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box{
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0px;
+            display: flex; /*go get separte vertical lines at spaces */
+        }
+
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0px 120px;
+        }
+
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -23px;
+            left: -9px;
+        }
+
+        .vertical-title{
+            position: relative;
+            width: 150px;
+            top: 75px;
+            font-size: 14px;
+        }
+
+        .vertical-desc{
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer{
+            background-color: #0e0e1a;
+            /* height: 233px; */
+        }
+
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul{
+            list-style: none;
+        }
+
+        .footer > div{
+            width: 223px;
+        }
+
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Aryan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Service</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                    <!-- slash redirects them to respctive pages and they now turned to hyper link and color changed and has underline-->
+                    <!--(alt + click) ->>> VS Code Shortcut for Multiple Cursors href="/" -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <!-- div.leftSection ->> Enter (Shortcut to create div fast)-->
+            <div class="leftSection">
+                Hi, My Name is <span class="purple">Aryan</span>
+                <div>and I am a passionate</div>
+                <!-- <div>Web Developer</div> -->
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="Developer_img.png" alt="err">
+            </div>
+        </section>
+        <hr>
+        <!-- <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer_logo.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi sed, ex esse consequatur, necessitatibus nemo pariatur consequuntur, atque impedit consectetur nisi explicabo qui!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="html_logo.png" alt="">
+                    <div class="vertical-title">
+                        Node.js Developer (2012-2014)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi sed, ex esse consequatur, necessitatibus nemo pariatur consequuntur, atque impedit consectetur nisi explicabo qui!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="instagram_logo.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2014-2015)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi sed, ex esse consequatur, necessitatibus nemo pariatur consequuntur, atque impedit consectetur nisi explicabo qui!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="facebook_logo.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2015-2016)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi sed, ex esse consequatur, necessitatibus nemo pariatur consequuntur, atque impedit consectetur nisi explicabo qui!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="youtube_logo.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2016-2017)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi sed, ex esse consequatur, necessitatibus nemo pariatur consequuntur, atque impedit consectetur nisi explicabo qui!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="twitter.png" alt="">
+                    <div class="vertical-title">
+                        Software Developer (2017-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi sed, ex esse consequatur, necessitatibus nemo pariatur consequuntur, atque impedit consectetur nisi explicabo qui!
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <footer>
+        <!-- <div class="footer">
+            <div class="footer-first">
+                <h3>Aryan's Developer Portflio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div> -->
+        <div class="footer-rights">
+            Copyright &#169 aryansportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <!--type js is a javascript typing animation library, search type js, open github link, copy cdn and add to code-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer.' , 'Graphic Designer.' , 'Web Designer.' , 'Video Editor.'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
